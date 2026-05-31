@@ -12,13 +12,21 @@ Analysed hospital transaction data across specialties, doctors, and procedures u
 - Built DAX measures and an interactive Power BI dashboard with slicers for specialty, location, and date range
 - Identified top-performing specialties and high-cost procedures to support resource allocation decisions
 
+## Dataset Columns
+`TransactionID | Date | RevenueAmount | ExpensesAmount | DoctorID | Doctors_FirstName | Doctors_LastName | Doctor_Gender | Specialty | PatientID | Patients_FirstName | Patients_LastName | Patients_Gender | ProcedureID | ProcedureName | Category | LocationID | Country | City | State | PostalCode`
+
+## SQL Files
+- `sql/01_revenue_by_specialty.sql` — Revenue, expenses and net income by specialty
+- `sql/02_doctor_performance.sql` — Doctor revenue rankings and gender breakdown
+- `sql/03_procedure_analysis.sql` — Procedure and category cost efficiency
+- `sql/04_patient_demographics_location.sql` — Patient demographics, location and monthly trends
+
 ## Key Skills Demonstrated
-- PostgreSQL: multi-table JOINs, GROUP BY, aggregate functions, data extraction
-- Power BI: DAX measures, Power Query, interactive dashboards, slicers
-- Healthcare data analysis and revenue performance reporting
+- PostgreSQL: aggregate functions, GROUP BY, EXTRACT, DATE_TRUNC, CASE/WHEN
+- Power BI: DAX measures, Power Query, interactive dashboards
+- Healthcare revenue and performance analysis
 
 ## Tools & Technologies
 - PostgreSQL
 - Microsoft Power BI
-- DAX
-- Power Query
+- DAX | Power Query
